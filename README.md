@@ -155,7 +155,7 @@ $ catkin_make
 Now that you have a workspace, clone or download this repo into the **src** directory of your workspace:
 ```sh
 $ cd ~/catkin_ws/src
-$ git clone https://github.com/udacity/RoboND-Kinematics-Project.git
+$ git clone https://github.com/nsafa/Robotic-Arm-Kinematics-Pick-and-Place-Project-using-ROS
 ```
 
 Now from a terminal window:
@@ -176,24 +176,24 @@ $ catkin_make
 
 Add following to your .bashrc file
 ```
-export GAZEBO_MODEL_PATH=~/catkin_ws/src/RoboND-Kinematics-Project/kuka_arm/models
+export GAZEBO_MODEL_PATH=~/catkin_ws/src/Robotic-Arm-Kinematics-Pick-and-Place-Project-using-ROS/kuka_arm/models
 
 source ~/catkin_ws/devel/setup.bash
 ```
 
-For demo mode make sure the **demo** flag is set to _"true"_ in `inverse_kinematics.launch` file under /RoboND-Kinematics-Project/kuka_arm/launch
+For demo mode make sure the **demo** flag is set to _"true"_ in `inverse_kinematics.launch` file under /Robotic-Arm-Kinematics-Pick-and-Place-Project-using-ROS/kuka_arm/launch
 
 In addition, you can also control the spawn location of the target object in the shelf. To do this, modify the **spawn_location** argument in `target_description.launch` file under /RoboND-Kinematics-Project/kuka_arm/launch. 0-9 are valid values for spawn_location with 0 being random mode.
 
 You can launch the project by
 ```sh
-$ cd ~/catkin_ws/src/RoboND-Kinematics-Project/kuka_arm/scripts
+$ cd ~/catkin_ws/src/Robotic-Arm-Kinematics-Pick-and-Place-Project-using-ROS/kuka_arm/scripts
 $ ./safe_spawner.sh
 ```
 
 If you are running in demo mode, this is all you need. To run your own Inverse Kinematics code change the **demo** flag described above to _"false"_ and run your code (once the project has successfully loaded) by:
 ```sh
-$ cd ~/catkin_ws/src/RoboND-Kinematics-Project/kuka_arm/scripts
+$ cd ~/catkin_ws/src/Robotic-Arm-Kinematics-Pick-and-Place-Project-using-ROS/kuka_arm/scripts
 $ rosrun kuka_arm IK_server.py
 ```
 Once Gazebo and rviz are up and running, make sure you see following in the gazebo world:
